@@ -14,8 +14,6 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 movement;
     private bool facingRight = true;
     private float dTime;
-    private float moveAngle;
-    private float moveScale;
     private float moveSpeedScale = 25;
 
     // Start is called before the first frame update
