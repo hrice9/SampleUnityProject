@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector2 movement;
     private bool facingRight = true;
+    private float moveAngle;
     private float dTime;
     private float moveSpeedScale = 25;
 
@@ -38,8 +39,10 @@ public class PlayerMovement : MonoBehaviour
         // get the xIn and yIn values and get a move angle out of it
         // move the player in the move angle at move speed
 
-        movement.x = xIn * dTime * moveSpeed * moveSpeedScale;
-        movement.y = yIn * dTime * moveSpeed * moveSpeedScale;
+        moveAngle = Mathf.Atan2(Mathf.Abs(yIn), Mathf.Abs(xIn));
+
+        movement.x = xIn * dTime * moveSpeed * moveSpeedScale * Mathf.Cos(moveAngle);
+        movement.y = yIn * dTime * moveSpeed * moveSpeedScale * Mathf.Sin(moveAngle);
 
         rb2d.velocity = movement;
 

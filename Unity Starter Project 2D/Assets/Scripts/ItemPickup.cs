@@ -11,7 +11,7 @@ public class ItemPickup : Interactable
     void Awake()
     {
         if (sr == null) sr = GetComponent<SpriteRenderer>();
-        sr.sprite = item.pickupIcon;
+        sr.sprite = item.pickupIcon; // Set the sprite of the object
         // set this object's sprite to the world object sprite from item
     }
 
@@ -23,3 +23,5 @@ public class ItemPickup : Interactable
         Destroy(gameObject, 0);                       // Remove the pickup item from the world
     }
 }
+
+// Create a new item pick up by creating an instance of this object and setting it's item reference
