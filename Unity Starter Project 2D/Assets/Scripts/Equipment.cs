@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 [System.Serializable]
+[CreateAssetMenu(fileName = "New Equipment", menuName = "Inventory/Equipment")]
 public class Equipment : Item
 {
     // add equipment here
