@@ -220,7 +220,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 24175021}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.0400004, y: 0.51699996, z: 0}
+  m_LocalPosition: {x: -4.5, y: 1.82, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 290279136}
@@ -1294,7 +1294,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 715584029}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.25696957, y: -1.063, z: 0}
+  m_LocalPosition: {x: -3.6, y: 0.14, z: 0}
   m_LocalScale: {x: 4.1668754, y: 0.33203125, z: 1}
   m_Children: []
   m_Father: {fileID: 290279136}
@@ -2276,11 +2276,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c75bd8a895bf5f4da951eb48b638e6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onlyDrawPath: 1
   unwalkableMask:
     serializedVersion: 2
     m_Bits: 512
-  gridWorldSize: {x: 30, y: 30}
-  nodeRadius: 0.16
+  gridWorldSize: {x: 100, y: 100}
+  nodeRadius: 0.04
 --- !u!4 &1484283306
 Transform:
   m_ObjectHideFlags: 0
@@ -2385,7 +2386,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1528439472}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6, y: 0.02, z: 0}
+  m_LocalPosition: {x: -48.9, y: 46.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3053,7 +3054,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2099967880}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.7915154, y: -0.463, z: 0}
+  m_LocalPosition: {x: -1.1, y: -0.43, z: 0}
   m_LocalScale: {x: 1.475, y: 1.0625, z: 1}
   m_Children: []
   m_Father: {fileID: 290279136}
@@ -3161,7 +3162,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2119006389}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.43394, y: -0.303, z: 0}
+  m_LocalPosition: {x: -4.9, y: -0.26, z: 0}
   m_LocalScale: {x: 1.5375, y: 0.6, z: 1}
   m_Children: []
   m_Father: {fileID: 290279136}
