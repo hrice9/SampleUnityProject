@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Grid : MonoBehaviour
 {
-    public bool onlyDrawPath;
+    public bool displayGridGizmos;
     public LayerMask unwalkableMask;
     Node[,] grid;
     public Vector2 gridWorldSize;
@@ -87,36 +87,11 @@ public class Grid : MonoBehaviour
     {
         Gizmos.DrawWireCube(transform.position, new Vector3(gridWorldSize.x, gridWorldSize.y, 1));
 
-        if (onlyDrawPath)
+        if (grid != null && displayGridGizmos)
         {
-            if(path != null)
+            foreach (Node n in grid)
             {
-                foreach(Node n in path)
-                {
-                    Gizmos.color = Color.black;
-                    Gizmos.DrawCube(n.worldPosition, Vector3.one * (nodeDiameter - .02f));
-                }
-            }
-        }
-        else
-        {
-            if (grid != null)
-            {
-
-                foreach (Node n in grid)
-                {
-                    Gizmos.color = (n.walkable) ? Color.white : Color.red;
-                    if (path != null)
-                    {
-                        if (path.Contains(n))
-                        {
-                            Gizmos.color = Color.black;
-                        }
-                    }
-                    Gizmos.DrawCube(n.worldPosition, Vector3.one * (nodeDiameter - .02f));
-
-
-                }
+                Gizmos.DrawCube(n.worldPosition, Vector3.one * (nodeDiameter - .01f));
             }
         }
     }
